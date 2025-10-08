@@ -1,7 +1,22 @@
 Branches in this repo (with details):
 
-- main
-  SHA: c8d798caf6930c9eaa5d53d62de4981b5331fcb1
-  Commits: 1
+- dependabot/docker/presidio-anonymizer/python-3.14-windowsservercore
+  SHA: 8bfe9048bcfde02c7dd3dd540ecfeb9fc9eccdd9
+  Commits: 3
   Recent commits:
+    8bfe904 | Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-10-08T17:38:46Z | Bump python in /presidio-anonymizer
+    a7b835a | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-08T17:38:07Z | Auto-update branch-info.txt
+    c8d798c | Author: Kyra Albaugh <231558924+kalbaugh05@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-10-08T13:37:56-04:00 | Initial commit
+- dependabot/github_actions/actions/checkout-5
+  SHA: 9403e2f542d5fad7c72c74f16b97f27d3ead6d81
+  Commits: 3
+  Recent commits:
+    9403e2f | Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-10-08T17:38:40Z | Bump actions/checkout from 3 to 5
+    a7b835a | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-08T17:38:07Z | Auto-update branch-info.txt
+    c8d798c | Author: Kyra Albaugh <231558924+kalbaugh05@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-10-08T13:37:56-04:00 | Initial commit
+- main
+  SHA: a7b835a35e65585a0c61e5fdccc9b207581ad638
+  Commits: 2
+  Recent commits:
+    a7b835a | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-08T17:38:07Z | Auto-update branch-info.txt
     c8d798c | Author: Kyra Albaugh <231558924+kalbaugh05@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-10-08T13:37:56-04:00 | Initial commit
