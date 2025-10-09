@@ -4,6 +4,8 @@ import pytest
 
 from presidio_anonymizer.operators import Encrypt, AESCipher
 from presidio_anonymizer.entities import InvalidParamError
+from presidio_anonymizer.operators import OperatorType
+from presidio_anonymizer.operators.encrypt import Encrypt
 
 
 @mock.patch.object(AESCipher, "encrypt")
@@ -39,6 +41,13 @@ def test_given_verifying_an_valid_length_bytes_key_no_exceptions_raised():
     Encrypt().validate(params={"key": b'1111111111111111'})
 
 
+
+
+
+
+
+
+
 def test_given_verifying_an_invalid_length_key_then_ipe_raised():
     with pytest.raises(
         InvalidParamError,
@@ -54,3 +63,14 @@ def test_given_verifying_an_invalid_length_bytes_key_then_ipe_raised(mock_encryp
         match="Invalid input, key must be of length 128, 192 or 256 bits",
     ):
         Encrypt().validate(params={"key": b'1111111111111111'})
+
+
+
+
+def test_operator_name():
+    """Test the operator name."""
+    assert Encrypt.operator_name() == "encrypt"
+
+def test_operator_type():
+    """Test the operator type."""
+    assert Encrypt.operator_type() == OperatorType.Encrypt
