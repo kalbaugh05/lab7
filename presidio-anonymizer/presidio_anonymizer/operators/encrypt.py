@@ -48,11 +48,3 @@ class Encrypt(Operator):
                 raise InvalidParamError(
                     f"Invalid input, {self.KEY} must be of length 128, 192 or 256 bits"
                 )
-
-    def operator_name(self) -> str:
-        """Return operator name."""
-        return "encrypt"
-
-    def operator_type(self) -> OperatorType:
-        """Return operator type."""
-        return OperatorType.Anonymize
