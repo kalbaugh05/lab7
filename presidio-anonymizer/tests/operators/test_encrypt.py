@@ -47,17 +47,15 @@ def test_given_verifying_an_invalid_length_key_then_ipe_raised():
         Encrypt().validate(params={"key": "key"})
 
 @mock.patch.object(Encrypt, "is_valid_key_size")
-def test_given_verifying_an_invalid_length_bytes_key_then_ipe_raised(mocker):
-    mock_is_valid_key_size = mocker.patch(
-        "presidio_anonymizer.operators.encrypt.is_valid_key_size",
-        return_value=False,
-    )
-    from presidio_anonymizer.operators.encrypt import BytesEncryptOperator
-    operator = BytesEncryptOperator()
-    import pytest
-    with pytest.raises(ValueError):
-        operator.encrypt(b"some bytes")
+def test_given_verifying_an_invalid_length_bytes_key_then_ipe_raised(mock_is_valid_key_size):
+    # Force the key to be invalid
+    mock_is_valid_key_size.return_value = False
 
+    with pytest.raises(
+        InvalidParamError,
+        match="Invalid input, key must be of length 128, 192 or 256 bits",
+    ):
+        Encrypt().validate(params={"key": b'1111111111111111'})
 
 
 
