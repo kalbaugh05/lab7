@@ -23,11 +23,11 @@ Branches in this repo (with details):
     a7b835a | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-08T17:38:07Z | Auto-update branch-info.txt
     c8d798c | Author: Kyra Albaugh <231558924+kalbaugh05@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-10-08T13:37:56-04:00 | Initial commit
 - main
-  SHA: 6b150213de1713aa215e5569a1504a499362ffac
-  Commits: 6
+  SHA: 246809bbc45d1ea5c9fb5529c511aaa31b3938fd
+  Commits: 10
   Recent commits:
+    246809b | Author: Kyra Albaugh <231558924+kalbaugh05@users.noreply.github.com> | Committer: Kyra Albaugh <231558924+kalbaugh05@users.noreply.github.com> | Date: 2025-10-09T03:28:42Z | Merge branch 'main' of github.com:kalbaugh05/lab7
+    c560f07 | Author: Kyra Albaugh <231558924+kalbaugh05@users.noreply.github.com> | Committer: Kyra Albaugh <231558924+kalbaugh05@users.noreply.github.com> | Date: 2025-10-09T03:24:47Z | Completed lab 7 tasks: mocking, parametrization, and coverage
+    fa05114 | Author: Kyra Albaugh <231558924+kalbaugh05@users.noreply.github.com> | Committer: Kyra Albaugh <231558924+kalbaugh05@users.noreply.github.com> | Date: 2025-10-09T02:49:02Z | 2 test
+    c5e52e2 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-09T01:51:18Z | Auto-update branch-info.txt
     6b15021 | Author: Kyra Albaugh <231558924+kalbaugh05@users.noreply.github.com> | Committer: Kyra Albaugh <231558924+kalbaugh05@users.noreply.github.com> | Date: 2025-10-09T01:51:08Z | Lab 7 completed
-    6783b4b | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-09T00:46:04Z | Auto-update branch-info.txt
-    ab045ad | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-08T17:38:55Z | Auto-update branch-info.txt
-    a294836 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-08T17:38:51Z | Auto-update branch-info.txt
-    a7b835a | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-10-08T17:38:07Z | Auto-update branch-info.txt
