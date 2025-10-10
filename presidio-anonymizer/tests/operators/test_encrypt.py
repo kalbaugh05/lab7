@@ -45,6 +45,11 @@ def test_given_verifying_an_invalid_length_key_then_ipe_raised():
     ):
         Encrypt().validate(params={"key": "key"})
 
+
+
+
+
+
 @mock.patch.object(AESCipher, "is_valid_key_size")
 def test_given_verifying_an_invalid_length_bytes_key_then_ipe_raised(mock_is_valid_key_size):
     # Arrange: simulate invalid key size
@@ -84,3 +89,11 @@ def test_operator_type():
 def test_valid_keys(key):  # Must start with 'test_'
     from presidio_anonymizer.operators import Encrypt
     Encrypt().validate(params={"key": key})
+
+
+
+    from presidio_anonymizer.operators.encrypt import Encrypt
+
+class DummyEncrypt(Encrypt):
+    operator_name = "encrypt"
+    operator_type = "crypto"
