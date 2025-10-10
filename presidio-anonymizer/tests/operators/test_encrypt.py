@@ -1,9 +1,8 @@
-from unittest import mock
-
-import pytest
-
-from presidio_anonymizer.operators import Encrypt, AESCipher
+from presidio_anonymizer.operators import Encrypt
+from presidio_anonymizer.operators.aes_cipher import AESCipher
 from presidio_anonymizer.entities import InvalidParamError
+import pytest
+from unittest import mock
 
 
 @mock.patch.object(AESCipher, "encrypt")
@@ -46,17 +45,20 @@ def test_given_verifying_an_invalid_length_key_then_ipe_raised():
     ):
         Encrypt().validate(params={"key": "key"})
 
-@mock.patch.object(Encrypt, "is_valid_key_size")
+@mock.patch.object(AESCipher, "is_valid_key_size")
 def test_given_verifying_an_invalid_length_bytes_key_then_ipe_raised(mock_is_valid_key_size):
-    # Force the key to be invalid
+    # Arrange: simulate invalid key size
     mock_is_valid_key_size.return_value = False
 
+    # Act + Assert: expect InvalidParamError
     with pytest.raises(
         InvalidParamError,
         match="Invalid input, key must be of length 128, 192 or 256 bits",
     ):
-        Encrypt().validate(params={"key": b'1111111111111111'})
+        Encrypt().validate(params={"key": b"badkey"})
 
+    # Verify the mock was used
+    mock_is_valid_key_size.assert_called_once()
 
 
 
